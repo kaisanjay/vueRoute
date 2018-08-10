@@ -3,6 +3,19 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import VueRouter from "vue-router"
+
+Vue.use(VueRouter)
+
+const routes = []
+
+
+const router = new VueRouter({
+	routes,
+	mode: "history"
+})
+
+
 
 Vue.config.productionTip = false
 
