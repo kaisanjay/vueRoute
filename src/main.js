@@ -2,17 +2,23 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
-import router from './router'
+import HelloWorld from "./components/HelloWorld"
+import About from "./components/About"
+import Contact from "./components/Contact"
 import VueRouter from "vue-router"
 
 Vue.use(VueRouter)
 
-const routes = []
+const routes = [
+	{ path: '/', component: HelloWorld },
+	{ path: '/about', component: About},
+	{ path: '/contact', component: Contact}
+]
 
 
 const router = new VueRouter({
 	routes,
-	mode: "history"
+	mode: 'history'
 })
 
 
