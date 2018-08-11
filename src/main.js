@@ -5,6 +5,7 @@ import App from './App'
 import HelloWorld from "./components/HelloWorld"
 import About from "./components/About"
 import Contact from "./components/Contact"
+import Param from "./components/Param"
 import VueRouter from "vue-router"
 
 Vue.use(VueRouter)
@@ -12,7 +13,8 @@ Vue.use(VueRouter)
 const routes = [
 	{ path: '/', component: HelloWorld },
 	{ path: '/about', component: About},
-	{ path: '/contact', component: Contact}
+	{ path: '/contact', component: Contact},
+	{ path: '/Param', component: Param}
 ]
 
 
