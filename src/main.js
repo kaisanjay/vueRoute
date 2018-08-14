@@ -6,6 +6,7 @@ import HelloWorld from "./components/HelloWorld"
 import About from "./components/About"
 import Contact from "./components/Contact"
 import Param from "./components/Param"
+import paramdetails from './components/paramdetails'
 import VueRouter from "vue-router"
 
 Vue.use(VueRouter)
@@ -14,7 +15,8 @@ const routes = [
 	{ path: '/', component: HelloWorld },
 	{ path: '/about', component: About},
 	{ path: '/contact', component: Contact},
-	{ path: '/Param', component: Param}
+	{ path: '/Param', component: Param},
+	{ path: '/Paramdetails/:id', component: paramdetails, name: 'Paramdetails' }
 ]
 
 
